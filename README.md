@@ -1,11 +1,11 @@
 # Very short description of the package
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/epmnzava/connectreseller-laravel.svg?style=flat-square)](https://packagist.org/packages/epmnzava/connectreseller-laravel)
-[![Build Status](https://img.shields.io/travis/epmnzava/connectreseller-laravel/master.svg?style=flat-square)](https://travis-ci.org/epmnzava/connectreseller-laravel)
-[![Quality Score](https://img.shields.io/scrutinizer/g/epmnzava/connectreseller-laravel.svg?style=flat-square)](https://scrutinizer-ci.com/g/epmnzava/connectreseller-laravel)
 [![Total Downloads](https://img.shields.io/packagist/dt/epmnzava/connectreseller-laravel.svg?style=flat-square)](https://packagist.org/packages/epmnzava/connectreseller-laravel)
+[![Emmanuel Mnzava](https://img.shields.io/badge/Author-Emmanuel%20Mnzava-green)](mailto:epmnzava@gmail.com)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+
+A laravel library to quickly connect with connectreseller domain management resellers.
 
 ## Installation
 
@@ -41,13 +41,10 @@ If you discover any security related issues, please email epmnzava@gmail.com ins
 
 ## Credits
 
-- [Emmanuel Mnzava](https://github.com/epmnzava)
+- [Emmanuel Mnzava](https://github.com/dbrax)
 - [All Contributors](../../contributors)
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-## Laravel Package Boilerplate
-
-This package was generated using the [Laravel Package Boilerplate](https://laravelpackageboilerplate.com).
