@@ -54,7 +54,7 @@ class ConnectresellerLaravelServiceProvider extends ServiceProvider
 
         // Register the main class to use with the facade
         $this->app->singleton('connectreseller-laravel', function () {
-            return new ConnectresellerLaravel;
+            return new DomainApi;
         });
     }
 }

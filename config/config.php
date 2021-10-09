@@ -7,6 +7,6 @@ return [
 
     "key"=>env("CONNECTRESELLER_KEY"),
     
-    "brand_id"=>env("CONNECTRESELLER_KEY")
+    "brand_id"=>env("CONNECTRESELLER_BRAND_ID")
 
 ];
