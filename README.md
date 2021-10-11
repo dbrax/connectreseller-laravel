@@ -11,7 +11,7 @@ ConnectReseller is a reseller arm for OwnRegistrar Inc. an ICANN Accredited Doma
 
 # [Domain Availability Check](#domain-availability-check)
 
-# [Domain Registration](#domain-registration)
+# [Domain Registration](#domain-registration-1)
 
 
 ## Installation
