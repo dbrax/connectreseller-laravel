@@ -90,7 +90,7 @@ Functionality needed to register a domain
 
  $domainapi = new DomainApi;
 
- $response=$domainapi->domain_register($domain_name, 1, true, "ns1.storewid.com", "ns2.storewid.com");
+ $response=$domainapi->domain_register("storewid.com", 1, true, "ns1.storewid.com", "ns2.storewid.com");
 
 
 ```
