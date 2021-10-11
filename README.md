@@ -67,13 +67,11 @@ checks if a domain exists returns true if it exists and false if it does not exi
 
  $domainapi = new DomainApi;
 
- if($domainapi->domian_exists($domain)){
+ if($domainapi->domian_exists($domain))
  	//yes domain exitsts
- }
- else
- {
+  else
  	//no domain does not exists
- }
+ 
 
 
 ```
