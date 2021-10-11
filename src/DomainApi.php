@@ -9,6 +9,20 @@ class DomainApi
   public   string $base_url = "https://api.connectreseller.com/ConnectReseller/ESHOP";
 
 
+
+   public function domian_exists(string domain){
+
+   $response=check_availability(domain);
+
+    $res=json_decode($response);
+
+    if($res->responseMsg->statusCode==200)
+      return true;
+    else
+      return false
+
+
+   }
   public function check_availability(string $domain_name)
   {
 
