@@ -7,6 +7,10 @@
 
 ConnectReseller is a reseller arm for OwnRegistrar Inc. an ICANN Accredited Domain Name Registrar. This package is a wrapper of connectreseller service.
 
+## Features
+
+# [Domain Availability Check](#domain-availability-check)
+
 ## Installation
 
 ## Version Matrix
@@ -85,7 +89,7 @@ Functionality needed to register a domain
 
  $domainapi = new DomainApi;
 
- $response=$domainapi->domain_register($domain_name, 1, null, "ns1.storewid.com", "ns2.storewid.com");
+ $response=$domainapi->domain_register($domain_name, 1, true, "ns1.storewid.com", "ns2.storewid.com");
 
 
 ```
