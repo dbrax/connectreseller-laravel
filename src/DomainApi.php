@@ -10,7 +10,7 @@ class DomainApi
 
 
 
-   public function domian_exists(string domain){
+   public function domian_exists(string $domain){
 
    $response=check_availability(domain);
 
