@@ -10,19 +10,18 @@ class DomainApi
 
 
 
-   public function domian_exists(string $domain){
+  public function domian_exists(string $domain)
+  {
 
-   $response=check_availability(domain);
+    $response = $this->check_availability($domain);
 
-    $res=json_decode($response);
+    $res = json_decode($response);
 
-    if($res->responseMsg->statusCode==200)
-      return true;
+    if ($res->responseMsg->statusCode == 200)
+      return false;
     else
-      return false
-
-
-   }
+      return true;
+  }
   public function check_availability(string $domain_name)
   {
 
@@ -59,8 +58,9 @@ class DomainApi
   public function domain_register(string $domain_name, string $duration, string $iswhoidprotection, string $ns1, string $ns2)
   {
 
-    $url = $this->base_url . "/checkDomain?APIKey=" . config("connectreseller-laravel.key") . "&websiteName=" . $domain_name . "&ProductType=1Duration=" . $duration . "&IsWhoisProt
-        ection=true&ns1=" . $ns1 . "&ns2=" . $ns2 . "&id=" . config("connectreseller-laravel.brand_id");
+    $url = $this->base_url . "/Order?APIKey=" . config("connectreseller-laravel.key") . "&ProductType=1&Websitename=" . $domain_name . "&Duration=". $duration ."&IsWhoisProtection=true&ns1=".$ns1."&ns2=" . $ns2 . "&Id=" ."33445";
+
+
 
     $curl = curl_init();
 
@@ -87,7 +87,13 @@ class DomainApi
       echo "cURL Error #:" . $err;
     }
 
-    return $response;
+
+      $res = json_decode($response);
+
+    if ($res->responseMsg->statusCode == 200)
+      return ["status"=>true,"message"=>"Domain is registered successfully"];
+    else
+      return ["status"=>false,"message"=>"Domain failed to be registered"];
   }
 
   public function domain_transfer()

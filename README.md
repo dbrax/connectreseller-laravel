@@ -68,9 +68,9 @@ checks if a domain exists returns true if it exists and false if it does not exi
  $domainapi = new DomainApi;
 
  if($domainapi->domian_exists($domain))
- 	//yes domain exitsts
+ 	//Domain not available for registration
   else
- 	//no domain does not exists
+ 	//Domain name available for registration
  
 
 
@@ -92,6 +92,21 @@ Functionality needed to register a domain
 
  $response=$domainapi->domain_register("storewid.com", 1, true, "ns1.storewid.com", "ns2.storewid.com");
 
+
+response
+---------
+
+{
+status: false,
+message: "Domain failed to be registered"
+}
+
+or
+
+{
+status: true,
+message: "Domain is registered successfully"
+}
 
 ```
 
